@@ -1,0 +1,30 @@
+@import '../../../assets/layout/colors.scss';
+@import '../../../assets/layout/flex.scss';
+
+
+.tela{
+  background:$background;
+  height:100vh;
+  h4{
+    color: $text;
+  }
+
+  input{
+    height: 40px;
+    border-radius: 15px;
+    color: $inputDestq;
+    border: none;
+    width:20rem;
+  }
+  
+  button{
+    height: 40px;
+    border-radius: 15px;
+    border:none;
+    background-color: $button;
+    color: $white;
+    width: 20rem;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(56, 157, 194, 0.3);
+  }
+}
