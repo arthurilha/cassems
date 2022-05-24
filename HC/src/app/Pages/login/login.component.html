@@ -1,36 +1,52 @@
-<div class="tela flex-center">
-
+<div class="layout">
+<app-header></app-header>
+<div class="tela mt-3">
   <div class="container flex-center">
     <div class="row flex-between">
       <div class="col-sm-5">
-        <form>
-          <div  class="form-group">
-              <input
-              formControlName="email" 
-              type="email"
-              class="form-control mb-3"
-              placeholder="CPF"
-              />
+        <div class="row">
+          <div class="col-sm-12 flex-center mb-3">
+            <h4>Dados de Acesso</h4>
           </div>
-          <div class="form-group">
-            <input
-              formControlName="senha"
-              type="password"
-              class="form-control mb-3"
-              placeholder="Senha"
-               />
+          <div class="col-sm-12 flex-center mb-3 b">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Selecione uma categoria</option>
+              <option value="1">Paciente</option>
+              <option value="2">Médico</option>
+            </select>
           </div>
-        </form>
-        <button class="btn btn-primary" >
-          Entrar
-         </button>
-        </div>
-
+          <div class="col-sm-12  flex-center">
+            <form>
+              <div  class="form-group">
+                  <input
+                  formControlName="email" 
+                  type="email"
+                  class="form-control mb-3"
+                  placeholder="CPF"
+                  />
+              </div>
+              <div class="form-group">
+                <input
+                  formControlName="senha"
+                  type="password"
+                  class="form-control mb-3"
+                  placeholder="Senha"
+                   />
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-12 flex-center">
+            <button class="btn btn-primary" [routerLink]="['/Home']">
+              Entrar
+             </button>
+          </div>
+        </div>  
+      </div>
       <div class="col-sm-5">
         <img src="../../../assets/svg/iconeEntrar.svg" alt="">
       </div>
     </div>
-    
-    
   </div>
 </div>
+</div>
+<app-footer></app-footer>

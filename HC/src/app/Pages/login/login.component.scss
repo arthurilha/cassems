@@ -1,23 +1,27 @@
 @import '../../../assets/layout/colors.scss';
 @import '../../../assets/layout/flex.scss';
 
-
+.layout{
+  height:100vh;
+  background:$background;
+}
 .tela{
   background:$background;
-  height:100vh;
   h4{
+    color: $text;
+  }
+  h6{
     color: $text;
   }
 
   input{
     height: 40px;
     border-radius: 15px;
-    color: $inputDestq;
     border: none;
     width:20rem;
   }
   
-  button{
+  .btn{
     height: 40px;
     border-radius: 15px;
     border:none;
@@ -26,5 +30,29 @@
     width: 20rem;
     font-weight: bold;
     box-shadow: 0px 0px 10px rgba(56, 157, 194, 0.3);
+  }
+  .btn1{
+    height: 40px;
+    border-radius: 15px;
+    border:none;
+    background-color: $button;
+    color: $white;
+    font-weight: bold;
+  }
+  
+  select{
+    height: 40px;
+    border-radius: 15px;
+    background-color: $inputDestq;
+    color: $white;
+    border: none;
+    width:20rem;
+  }
+
+  option{
+    background-color: $white;
+    border: red;
+    color: $text;
+    border-radius: 15px;
   }
 }

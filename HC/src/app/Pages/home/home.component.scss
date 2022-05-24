@@ -1,0 +1,26 @@
+@import '../../../assets/layout/colors.scss';
+@import '../../../assets/layout/flex.scss';
+
+.tela{
+  background:$background;
+  height: 100vh;
+}
+
+h5{
+  color: $text;
+}
+h4{
+  color: $title;
+}
+
+.card{
+  background: $white;
+  box-shadow: 0px 4px 4px #F6F6F6;
+  border-radius: 10px;
+  border: none;
+}
+
+img:hover{
+  cursor: pointer;
+  background: $buttont;
+}

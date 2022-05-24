@@ -1,1 +1,79 @@
-<p>profile works!</p>
+<div class="tela">
+  <div class="row flex-center mx-5">
+    <div class="col-sm-6">
+      <img src="../../../assets/svg/logo.svg" alt="">
+    </div>
+    <div class="col-sm-6 flex-end ">
+      <div class="row">
+        <div class="col-sm-6 mb-1">
+          <img src="../../../assets/svg/exams.svg" alt="perfil" [routerLink]="['/Home']">
+        </div>
+        <div class="col-sm-6">
+          <img src="../../../assets/svg/exit.svg" alt="Sair" [routerLink]="['']">
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      
+      <div class="col-sm-6">
+        <div class="col-sm-12 flex-center mb-3">
+          <h4>Atualizar Dados</h4>
+        </div>
+        <div class="col-sm-12  flex-center">
+          <form>
+            <div  class="form-group">
+                <input
+                formControlName="email" 
+                type="email"
+                class="form-control mb-3"
+                placeholder="CPF"
+                />
+            </div>
+            <div class="form-group">
+              <input
+                formControlName="senha"
+                type="password"
+                class="form-control mb-3"
+                placeholder="Senha"
+                 />
+            </div>
+            <div class="form-group">
+              <input
+                formControlName="senha"
+                type="password"
+                class="form-control mb-3"
+                placeholder="Senha"
+                 />
+            </div>
+            <div class="form-group">
+              <input
+                formControlName="senha"
+                type="password"
+                class="form-control mb-3"
+                placeholder="Senha"
+                 />
+            </div>
+            <div class="form-group">
+              <input
+                formControlName="senha"
+                type="password"
+                class="form-control mb-3"
+                placeholder="Senha"
+                 />
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-12 flex-center">
+          <button class="btn btn-primary" [routerLink]="['/perfil']">
+            Atualizar
+           </button>
+        </div>
+      </div>
+      <div class="col-sm-6 flex-center">
+        <img src="../../../assets/svg/pose_8.svg" alt="">
+    </div>
+    </div>
+  
+  </div>
+</div>
