@@ -18,26 +18,93 @@
       <h5>*Confira os seus próximos exames aqui, além de consultar os seus exames anteriores.</h5>
     </div>
 
-    <div class="col-sm-12 mt-3 card p-3">
+    <div class="col-sm-12 mt-3 card p-3" *ngIf="open == false">
       <div class="row">
       <div class="col-sm-6 flex-start" >
         <h4>Exames</h4>
       </div>
       <div class="col-sm-6 flex-end">
-        <img src="../../../assets/svg/open.svg" alt="">
+        <img src="../../../assets/svg/open.svg" alt="open" (click)="opens()">
       </div>
       </div>
     </div>
 
-    <div class="col-sm-12 mt-3 card p-3">
+    <div class="col-sm-12 mt-3 card p-3" *ngIf="open == true">
+      <div class="row">
+      <div class="col-sm-6 flex-start" >
+        <h4>Exames</h4>
+      </div>
+      <div class="col-sm-6 flex-end">
+        <img src="../../../assets/svg/close.svg" alt="close" (click)="opens()">
+      </div>
+      </div>
+      <div class="row">
+        <table class="table table-striped">
+          <thead>
+            <tr class="text-muted">
+              <th scope="col">N°</th>
+              <th scope="col">Data</th>
+              <th scope="col">N° Prontuário</th>
+              <th scope="col">Exame</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr >
+              <th>1</th>
+              <td>20/10/2022</td>
+              <td>1022</td>
+              <td>Urina</td>
+              <td class="flex-end"><button class="btn btn-primary bI ">Imagem</button></td>
+              <td><button class="btn btn-primary bL">Laudo</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="col-sm-12 mt-3 card p-3" *ngIf="openTwo == true">
       <div class="row">
       <div class="col-sm-6 flex-start" >
         <h4>Próximos Exames</h4>
       </div>
       <div class="col-sm-6 flex-end">
-        <img src="../../../assets/svg/open.svg" alt="">
+        <img src="../../../assets/svg/close.svg" alt="close" (click)="openss()">
+      </div>
+      <div class="row">
+        <table class="table table-striped">
+          <thead>
+            <tr class="text-muted">
+              <th scope="col">N°</th>
+              <th scope="col">Data</th>
+              <th scope="col">N° Prontuário</th>
+              <th scope="col">Preparo do exame</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr >
+              <th>1</th>
+              <td>20/10/2022</td>
+              <td>1022</td>
+              <td>Urina</td>
+              <td class="flex-end"><button class="btn btn-primary bI ">Imagem</button></td>
+              <td><button class="btn btn-primary bL">Laudo</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      </div>
+    </div>
+    <div class="col-sm-12 mt-3 card p-3" *ngIf="openTwo == false">
+      <div class="row">
+      <div class="col-sm-6 flex-start" >
+        <h4>Próximos Exames</h4>
+      </div>
+      <div class="col-sm-6 flex-end">
+        <img src="../../../assets/svg/open.svg" alt="open" (click)="openss()">
       </div>
       </div>
     </div>
+  
   </div>
 </div>

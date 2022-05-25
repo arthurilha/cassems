@@ -27,3 +27,18 @@ img:hover{
 .icon:hover{
   height:32px;
 }
+.bI{
+  background: $bimg;
+  border: none;
+  color: $white;
+}
+
+.bL{
+  background: $bLaudo;
+  border: none;
+  color: $white;
+}
+
+button:hover{
+  color: $colorDestq;
+}

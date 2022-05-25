@@ -7,9 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  open : boolean = false;
+  
+  openTwo : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  opens(){
+    if(this.open){
+      this.open = false;
+    }
+    else{
+      this.open = true;
+    }
+  }
+
+  openss(){
+    if(this.openTwo){
+      this.openTwo = false;
+    }
+    else{
+      this.openTwo = true;
+    }
+  }
 }
