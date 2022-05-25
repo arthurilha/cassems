@@ -16,11 +16,11 @@
             </select>
           </div>
           <div class="col-sm-12  flex-center">
-            <form>
+            <form [formGroup]="form">
               <div  class="form-group">
                   <input
-                  formControlName="email" 
-                  type="email"
+                  formControlName="cpf" 
+                  type="text"
                   class="form-control mb-3"
                   placeholder="CPF"
                   />
@@ -36,7 +36,8 @@
             </form>
           </div>
           <div class="col-sm-12 flex-center">
-            <button class="btn btn-primary" [routerLink]="['/Home']">
+            <button class="btn btn-primary" [routerLink]="['/Home']"
+            [disabled]="form.valid">
               Entrar
              </button>
           </div>

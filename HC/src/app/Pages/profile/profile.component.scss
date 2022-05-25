@@ -4,7 +4,10 @@
   background:$background;
   height: 100vh;
 }
-
+p{
+  color: $text;
+  margin: 2px;
+}
 h5{
   color: $text;
 }
@@ -31,4 +34,18 @@ input{
   width: 20rem;
   font-weight: bold;
   box-shadow: 0px 0px 10px rgba(56, 157, 194, 0.3);
+}
+.btn:hover{
+  height: 45px;
+  border-radius: 15px;
+  border:none;
+  background-color: $button;
+  color: $white;
+  width: 20rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(56, 157, 194, 0.3);
+}
+
+.icon:hover{
+  height:32px;
 }

@@ -6,72 +6,77 @@
     <div class="col-sm-6 flex-end ">
       <div class="row">
         <div class="col-sm-6 mb-1">
-          <img src="../../../assets/svg/exams.svg" alt="perfil" [routerLink]="['/Home']">
+          <img src="../../../assets/svg/exams.svg" alt="perfil" [routerLink]="['/Home']" class="icon">
         </div>
         <div class="col-sm-6">
-          <img src="../../../assets/svg/exit.svg" alt="Sair" [routerLink]="['']">
+          <img src="../../../assets/svg/exit.svg" alt="Sair" [routerLink]="['']"  class="icon">
         </div>
       </div>
     </div>
 
-    <div class="row mt-5">
+    <div class="row">
       
       <div class="col-sm-6">
-        <div class="col-sm-12 flex-center mb-3">
+        <div class="col-sm-12 flex-center mb-1">
           <h4>Atualizar Dados</h4>
         </div>
         <div class="col-sm-12  flex-center">
-          <form>
-            <div  class="form-group">
+          <form [formGroup]="form">
+            <div  class="form-group" >
+              <p>Nome</p>
                 <input
-                formControlName="email" 
-                type="email"
-                class="form-control mb-3"
-                placeholder="CPF"
+                formControlName="nome" 
+                type="text"
+                class="form-control mb-2"
+                placeholder="nome"
                 />
             </div>
             <div class="form-group">
+              <p>Endereço</p>
               <input
-                formControlName="senha"
-                type="password"
-                class="form-control mb-3"
-                placeholder="Senha"
+                formControlName="endereco"
+                type="text"
+                class="form-control mb-2"
+                placeholder="Endereço"
                  />
             </div>
             <div class="form-group">
+              <p>Data Nascimento</p>
               <input
-                formControlName="senha"
-                type="password"
-                class="form-control mb-3"
-                placeholder="Senha"
+                formControlName="dataNascimento"
+                type="text"
+                class="form-control mb-2"
+                placeholder="Data do nascimento"
                  />
             </div>
             <div class="form-group">
+              <p>Email</p>
               <input
-                formControlName="senha"
-                type="password"
-                class="form-control mb-3"
-                placeholder="Senha"
-                 />
+              formControlName="email"
+              type="email"
+              class="form-control mb-2"
+              placeholder="Email"
+              />
             </div>
             <div class="form-group">
+              <p>Telefone</p>
               <input
-                formControlName="senha"
-                type="password"
+                formControlName="telefone"
+                type="text"
                 class="form-control mb-3"
-                placeholder="Senha"
+                placeholder="Telefone"
                  />
             </div>
           </form>
         </div>
         <div class="col-sm-12 flex-center">
-          <button class="btn btn-primary" [routerLink]="['/perfil']">
+          <button class="btn btn-primary" [routerLink]="['/perfil']" [disabled]="!form.valid" (click)="postContact()">
             Atualizar
            </button>
         </div>
       </div>
       <div class="col-sm-6 flex-center">
-        <img src="../../../assets/svg/pose_8.svg" alt="">
+        <img src="../../../assets/svg/pose_8.svg" alt="médico">
     </div>
     </div>
   
