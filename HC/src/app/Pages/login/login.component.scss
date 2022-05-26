@@ -1,5 +1,8 @@
 @import '../../../assets/layout/colors.scss';
 @import '../../../assets/layout/flex.scss';
+@import '../../../assets/layout/responsive.scss';
+
+
 
 .layout{
   height:100vh;
@@ -20,6 +23,9 @@
     border-radius: 15px;
     border: none;
     width:20rem;
+    @include responsive (s){
+      width:15rem;
+    }
   }
   
   .btn{
@@ -31,6 +37,9 @@
     width: 20rem;
     font-weight: bold;
     box-shadow: 0px 0px 10px rgba(56, 157, 194, 0.3);
+    @include responsive (s){
+      width:15rem;
+    }
   }
   .btn1{
     height: 40px;
@@ -39,6 +48,9 @@
     background-color: $button;
     color: $white;
     font-weight: bold;
+    @include responsive (s){
+      width:15rem;
+    }
   }
   
   select{
@@ -48,16 +60,25 @@
     color: $colorDestq;
     border: none;
     width:20rem;
+    @include responsive (s){
+      width:15rem;
+    }
   }
 
   option{
     background-color: $white;
-    border: red;
     color: $text;
     border-radius: 15px;
   }
 
   button:hover{
     color: $colorDestq;
+  }
+
+  .med{
+    @include responsive (s){
+      height: 300px;
+      width: 300px;
+    }
   }
 }

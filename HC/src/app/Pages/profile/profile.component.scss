@@ -1,5 +1,6 @@
 @import '../../../assets/layout/colors.scss';
 @import '../../../assets/layout/flex.scss';
+@import '../../../assets/layout/responsive.scss';
 .tela{
   background:$background;
   padding-bottom: 20px;
@@ -48,4 +49,21 @@ input{
 
 .icon:hover{
   height:32px;
+}
+
+.icon{
+  @include responsive (s){
+    margin-top: -40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+
+
+.r{
+  @include responsive (s){
+    margin-left: 50px;
+    }
 }

@@ -1,5 +1,8 @@
 @import '../../../assets/layout/colors.scss';
 @import '../../../assets/layout/flex.scss';
+@import '../../../assets/layout/responsive.scss';
+
+
 
 .tela{
   background:$background;
@@ -18,6 +21,10 @@ h4{
   box-shadow: 0px 4px 4px #F6F6F6;
   border-radius: 10px;
   border: none;
+  @include responsive (s){
+  overflow-x: scroll;
+  overflow-y: scroll;
+  }
 }
 
 img:hover{
@@ -41,4 +48,21 @@ img:hover{
 
 button:hover{
   color: $colorDestq;
+}
+
+.icon{
+  @include responsive (s){
+    margin-top: -40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    }
+}
+
+
+
+.r{
+  @include responsive (s){
+    margin-left: 50px;
+    }
 }

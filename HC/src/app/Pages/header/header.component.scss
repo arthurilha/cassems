@@ -1,5 +1,6 @@
 @import '../../../assets/layout/colors.scss';
 @import '../../../assets/layout/flex.scss';
+@import '../../../assets/layout/responsive.scss';
 
 
 .row{
@@ -8,4 +9,11 @@
 .icon:hover{
   height:35px;
   cursor: pointer;
+}
+.logo{
+  @include responsive (s){
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   }
 }
